@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(180, 180, 180);
 }
 
 .container {
@@ -94,6 +94,6 @@ header {
 }
 
 footer {
-  text-align: center;
+  text-align: right;
   padding: 12px;
 }

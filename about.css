@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://images.pexels.com/photos/40384/einkorn-grain-field-einkorn-wheat-40384.jpeg?cs=srgb&dl=pexels-pixabay-40384.jpg&fm=jpg); 
+    background-size: cover;
+    font-family: "Lucida Console", "Courier New", monospace; }
+  
+  h1 {
+    background-color: #d1caa1;
+    opacity: 0.7;
+    color: black;
+  }
+  h3 {
+    background-color: #d1caa1;
+    opacity: 0.7;
+    color:black;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+
+       }
+    
+      li a {
+        color: black;
+        text-align: center;
+      }
+      li a:hover {
+        color: white;
+        background-color: #66717E;
+      }
+      form {
+        background-color: #d1caa1;
+        opacity: 0.7; 
+      }
+
+
+      p {
+    background-color: #d1caa1;
+    opacity: 0.7;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+  }
+  .footer {
+    color: black;
+    
+ }

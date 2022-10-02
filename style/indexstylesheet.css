@@ -112,6 +112,26 @@ footer {
 
 @media only screen and (max-width: 600px) {
     body {
-    font-size: 10px;
-    }
+    font-size: 15px;
+flex-direction: column-reverse;
+
+}
+
+
+
+.container{flex-direction: column;
+
+margin-left: 9%;
+
+}
+
+
+
+.step1,
+.step2 {
+  height: auto;
+  width: 80%;
+}
+
+
   }

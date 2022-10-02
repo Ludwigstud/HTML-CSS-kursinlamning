@@ -25,10 +25,12 @@ html {
 .top-left {
   position: absolute;
   top: 25px;
-  left: 16px;
+  left: 15px;
+  right: 10px;
   background-color: rgba(0, 0, 0, 0.345);
   padding: 2px;
   font-family: "Courier New", monospace;
+  font-size: 22px;
 
   max-width: 300px;
   max-height: 400px;
@@ -93,16 +95,13 @@ header {
   margin-right: 1.65%;
 }
 
-.welcome{
-
-background-color: rgba(0, 0, 0, 0.692);
-color: black;
-font-size: 24px;
-padding: 2%;
-padding-left: 10%;
-padding-right: 10%;
-
-
+.welcome {
+  background-color: rgba(0, 0, 0, 0.692);
+  color: black;
+  font-size: 24px;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 footer {
@@ -111,27 +110,23 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-    font-size: 15px;
-flex-direction: column-reverse;
-
-}
-
-
-
-.container{flex-direction: column;
-
-margin-left: 9%;
-
-}
-
-
-
-.step1,
-.step2 {
-  height: auto;
-  width: 80%;
-}
-
-
+  body {
+    font-size: 20px;
   }
+
+  .top-left {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: column;
+
+    margin-left: 9%;
+  }
+
+  .step1,
+  .step2 {
+    height: auto;
+    width: 80%;
+  }
+}

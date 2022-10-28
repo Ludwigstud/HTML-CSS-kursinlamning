@@ -4,68 +4,267 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Skobutiken</title>
+    <link rel="icon" href="./Bilder/Shoelogo.png" />
+    <link rel="stylesheet" href="./style/indexstyle.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/indexstylesheet.css" />
-    <meta
-      name="description"
-      content="This website is for buying sneakers, new and trending. best sneakers 2022 new releases shoes"
-    />
-
-    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-
   <body>
-    <header>
-      <b class="welcome"> W E L C O M E </b>
+    <header class="container">
+      <div
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <p
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <img
+            src="./Bilder/Shoelogo.png"
+            alt="ett par skor som är röd och orange"
+          />
+          <span class="fs-1">Välkommen till Skobutiken</span>
+        </p>
+
+        <nav class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+        </nav>
+      </div>
     </header>
 
-    <section class="container">
-      <div class="step1">
-        <div class="top-left">
-          Looking to get some new shoes? Checkout our new releases and fresh
-          sneakers here!
-        </div>
-        <div class="bottom-right">
-          <a class="btn" href="products.html">Products</a>
-        </div>
-        <img src="./Bilder/sko2.jpg" alt="" />
+    <section id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-      <div class="step2">
-        <div class="top-left">
-          Start following our new sneaker blog about new releases and news in
-          the sneaker world!
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Bilder/shoe3.jpg" alt="inventory of the store" />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h4 class="display-5">Välkommen till Skobutiken.se</h4>
+              <p>Här hittar du ett stort utval av skor</p>
+            </div>
+          </div>
         </div>
-        <div class="bottom-right"><a class="btn" href="blog.html">Blog</a></div>
-        <img src="./Bilder/sko1.jpg" alt="" />
+        <div class="carousel-item">
+          <img src="./Bilder/shoe2.jpg" alt=" black and white sneakers" />
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h2 class="display-1">Nya sneakers för 2022</h2>
+              <p>
+                Letar du efter nya sneakers? Ta gärna en titt bland våra nya
+                produkter
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Bilder/shoe.jpg" alt="Dark green sneakers outside" />
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h3>Adidas Original Sneakers</h3>
+              <p>
+                Den nya releasen av Adidas Original Sneakers finns att köpa hos
+                oss
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
 
-    <section class="container">
-      <div class="step1">
-        <div class="top-left">
-          Do you need to get in contact with us? Please use the form below to
-          get in touch!
+    <main>
+      <div class="container py-4">
+        <div class="pb-3 mb-4 border-bottom">
+          <h1 class="fs-1">Hitta något som passar just för dig</h1>
         </div>
-        <div class="bottom-right">
-          <a class="btn" href="contact.html">Contact Us</a>
+
+        <div class="p-5 mb-4 bg-light rounded-3" id="pic0">
+          <div class="container-fluid py-5">
+            <h3 class="display-5 fw-bold">Vad är du ute efter?</h3>
+
+            <p class="col-md-8 fs-4">
+              Här på Skobutiken hittar du alltid någon som passar just dig! Ta
+              gärna en titt på vårat utbud.
+            </p>
+            <a
+              id="buttoncolor"
+              href="products.html"
+              class="btn btn-secondary"
+              role="button"
+              >Handla</a
+            >
+          </div>
         </div>
-        <img src="./Bilder/sko3.jpg" alt="" />
+
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3" id="pic1">
+              <h2>Sneakers</h2>
+              <p>Hos oss hittar du alltid sneakers som passar just dig!</p>
+              <a
+                id="buttoncolor"
+                href="#"
+                class="btn btn-secondary"
+                role="button"
+                >Handla</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3" id="pic2">
+              <h2>Känger & boots</h2>
+              <p>
+                Letar du efter säsongens kängor & boots? Då har vi ett stort
+                utbud av bikerboots, ankelboots, chelseaboots, curlingkängor och
+                fodrade kängor.
+              </p>
+              <a
+                id="buttoncolor"
+                href="#"
+                class="btn btn-secondary"
+                role="button"
+                >Handla</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3" id="pic3">
+              <h2>Löparskor</h2>
+              <p class="textoutline">
+                Här kan du handla löparskor från kända varumärken så som Hoka
+                One One, Nike, Asics och Saucony samt många andra!
+              </p>
+              <a
+                id="buttoncolor"
+                href="#"
+                class="btn btn-secondary"
+                role="button"
+                >Handla</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3" id="pic4">
+              <h2>Sandaler</h2>
+              <p>
+                Köp säsongens nyaste inom sandaler här, vi har ett stort utbud
+                av sköna lädersandaler och gladiatorsandaler som passar stora
+                som små.
+              </p>
+              <a
+                id="buttoncolor"
+                href="#"
+                class="btn btn-secondary"
+                role="button"
+                >Handla</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="step2">
-        <div class="top-left">
-          Find out what our brand is all about down here!
+    </main>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Prenumerera på vårat nyhetsbrev</h5>
+            <p>För att ta del av nyheter från oss!</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Prenumerera</button>
+            </div>
+          </form>
         </div>
-        <div class="bottom-right">
-          <a class="btn" href="about.html">About</a>
-        </div>
-        <img src="./Bilder/sko4.jpg" alt="" />
-      </div>
-    </section>
-    <footer>© 2022 Shoeshoe SWE, Inc. All rights reserved.</footer>
+
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link px-2 text-muted">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 ShoeShop.com, Inc</p>
+      </footer>
+    </div>
   </body>
 </html>
